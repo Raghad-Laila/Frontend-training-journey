@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Information Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>Training Program Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About the Program</a></li>
+                <li><a href="#schedule">Class Schedule</a></li>
+                <li><a href="#register">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section id="about">
+            <h2>About the Training Program</h2>
+            
+            <article>
+                <h3>Course Details</h3>
+                <p>This training aims to teach <strong>Web Basics</strong> <mark>in a simple way</mark>.</p>
+                <blockquote>"Continuous practice is the <em>key to success</em> in programming."</blockquote>
+            </article>
+
+            <aside>
+                <h3>Useful Links</h3>
+                <p>You can visit <a href="https://www.sololearn.com" target="_blank">SoloLearn</a> to learn more about HTML.</p>
+            </aside>
+        </section>
+
+        <hr>
+
+        <section id="schedule">
+            <h2>Study Plan and Terms</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                        <th>Trainer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sunday</td>
+                        <td rowspan="2">HTML Basics</td>
+                        <td>Ahmed</td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Ahmed</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td colspan="2">General Project Review Session</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total training days: 3 days</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h3>Registration Steps:</h3>
+            <ol>
+                <li>Fill out the registration form below.</li>
+                <li>Confirm your registration via email.</li>
+            </ol>
+
+            <h3>Training Requirements:</h3>
+            <ul>
+                <li>Having a PC with a code editor to work on.</li>
+                <li>Commitment to attend classes.</li>
+            </ul>
+
+            <h3>Guide:</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>The basic language to build web pages.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section id="media">
+            <h2>Media Gallery</h2>
+            
+            <img src="./images/Screenshot 2026-07-14 233213.png" alt="Picture of a website interface" width="400">
+            
+            <br><br>
+
+            <video src="./vedio/Recording 2026-07-14 233453.mp4" controls width="400">
+                Your browser does not support the video.
+            </video>
+        </section>
+
+        <hr>
+
+        <section id="register">
+            <h2>Training Registration Form</h2>
+            
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="username">Full Name:</label>
+                        <input type="text" id="username" name="username" required>
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="birthdate">Birth Date:</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                    </p>
+                    
+                    <p>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="15" max="60">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>More Details</legend>
+                    
+                    <p>Choose your preferred track:</p>
+                    <p>
+                        <input type="radio" id="track1" name="track" value="front" checked>
+                        <label for="track1">(Frontend)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="track2" name="track" value="uiux">
+                        <label for="track2">(UI/UX)</label>
+                    </p>
+
+                    <p>Current skills:</p>
+                    <p>
+                        <input type="checkbox" id="skill1" name="skills" value="git">
+                        <label for="skill1">Git</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="skill2" name="skills" value="figma">
+                        <label for="skill2">Figma</label>
+                    </p>
+
+                    <p>
+                        <label for="city">Choose your city:</label>
+                        <select id="city" name="city">
+                            <option value="damascus">Damascus</option>
+                            <option value="aleppo">Aleppo</option>
+                            <option value="homs">Homs</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Your message to the trainer:</label>
+                        <br>
+                        <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message here..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Send Request</button>
+                    <button type="reset">Clear Data</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Copyright for our website © 2026</p>
+        <p>Contact us: <a href="mailto:ragadlaila2003@gmail.com">ragadlaila2003@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
